@@ -1,9 +1,7 @@
-zn "%SYS"
-  
+zn "%SYS" 
 // Unexpire passwords and set up passwordless mode to simplify dev use.
 do ##class(Security.Users).UnExpireUserPasswords("*")
 zpm "install passwordless"
-do $system.OBJ.LoadDir("/ext/src/%ZX","ck")
 zn "USER"
 zpm "load /ext -v":1
 halt
