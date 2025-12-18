@@ -17,5 +17,3 @@ USER>
 To access IRIS System Management Portal  
 
 http://localhost:52773/csp/sys/UtilHome.csp
-
-Analytics to be enabled manually
