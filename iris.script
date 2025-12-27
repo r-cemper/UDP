@@ -1,12 +1,8 @@
 zn "%SYS" 
 do ##class(Security.Users).UnExpireUserPasswords("*")
 zpm "install passwordless"
-set param("DeepSeeEnabled")=1
-set sc=##class(Security.Applications).Modify("/csp/user",.param)
 zn "USER"
-zpm "load /ext -v":1
-write $system.OBJ.Compile("%ZX.dbfree","ck")
-do ##class(ZX.dbfree).Load()
+write $system.OBJ.Import("/ext/demo.cls","ck")
 halt
 
 

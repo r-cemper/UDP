@@ -1,9 +1,9 @@
-Quick & dirty example for Evgeny
+Example of using UDP Network protocol
 
 ### Installation
 Clone/git pull the repo into any local directory
 ```
-git clone https://github.com/r-cemper/DFI.git
+git clone https://github.com/r-cemper/UDP.git
 ```
 To build and start the container run:
 ```

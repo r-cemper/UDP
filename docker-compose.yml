@@ -1,9 +1,25 @@
 services:
   iris:
-    image: intersystemsdc/irishealth-community
+    image: intersystemsdc/iris-community
     command: -a /ext/ascript.sh
     ports: 
       - 1972:1972
       - 52773:52773
+# just for external testing      
+      - 5277:5200/udp
     volumes:
       - ./:/ext
+    environment:
+      - UDP=2      
+  iris2:
+    image: intersystemsdc/iris-community
+    command: -a /ext/ascript.sh
+    ports: 
+      - 41773:1972
+      - 42773:52773
+# just for external testing      
+      - 4277:5200/udp
+    volumes:
+      - ./:/ext
+    environment:
+      - UDP=0    
