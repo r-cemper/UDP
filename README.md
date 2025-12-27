@@ -54,7 +54,3 @@ while the other container is sending its LOREM IPSUM
 ````
 USER>do ##class(UDP.demo).lorem()
 ````
-
-
-````
-
