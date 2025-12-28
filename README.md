@@ -1,7 +1,8 @@
 ## Example of using UDP Network protocol   
 UDP is a network protocol at OSI level 4, similar to TCP    
 It is not as popular as TCP but especially focused on Speed     
-https://en.wikipedia.org/wiki/User_Datagram_Protocol  
+https://en.wikipedia.org/wiki/User_Datagram_Protocol   
+This example runs 2 containers talking to each other over UDP.     
 
 ### Installation
 Clone/git pull the repo into any local directory
