@@ -28,7 +28,7 @@ ClassMethod send(txt As %String = "hi UDP !", port = 5200) As %String
 	quit %udp.Send(txt,%host,port)
 }
 
-ClassMethod lorem(port)
+ClassMethod lorem(port=5200)
 {
 	set nl=$c(13,10)
 	set lorem="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, "_nl_
@@ -60,3 +60,4 @@ ClassMethod lorem(port)
 }
 
 }
+
