@@ -2,6 +2,7 @@ services:
   iris:
     image: intersystemsdc/iris-community
     command: -a /ext/ascript.sh
+    restart: always    
     ports: 
       - 1972:1972
       - 52773:52773
@@ -14,6 +15,7 @@ services:
   iris2:
     image: intersystemsdc/iris-community
     command: -a /ext/ascript.sh
+    restart: always
     ports: 
       - 41773:1972
       - 42773:52773
